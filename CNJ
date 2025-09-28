@@ -1,0 +1,20 @@
+```mermaid
+sequenceDiagram
+    participant FRMF as Fédération Royale Marocaine de Football (FRMF)
+    participant LNFP as Ligue Nationale de Football Professionnel (LNFP)
+    participant Clubs as Clubs Participants
+    participant DTN as Direction Technique Nationale (DTN)
+    participant Karaz as Plateforme Karaz
+    participant Agences as Agences Événementielles
+
+    FRMF->>LNFP: Délègue l’organisation du Championnat National des Jeunes
+    LNFP->>DTN: Demande la programmation du calendrier général
+    DTN-->>LNFP: Transmet calendrier et répartition géographique
+    LNFP->>Clubs: Envoi des notifications (emails, dossiers à déposer)
+    Clubs-->>LNFP: Dépôt des dossiers administratifs et sportifs
+    LNFP->>Karaz: Alimente la plateforme avec matchs, dates, commissaires
+    Karaz-->>LNFP: Centralisation et suivi des données
+    LNFP->>Clubs: Organisation tirages au sort et homologations
+    Clubs-->>LNFP: Engagement des équipes dans les catégories
+    LNFP->>Agences: Sollicite organisation de la cérémonie de remise
+    Agences-->>LNFP: Organisation de l’événement final (remise des trophées)
